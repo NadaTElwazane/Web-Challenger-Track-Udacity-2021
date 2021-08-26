@@ -72,7 +72,7 @@ So, we\'re going to discuss ***HTML***, which stands for Hypertext Markup Langua
 
 So, HTML is made up of *text* that the user will actually read in their browser, and *markup* which *tells the browser what that text should look like, or how it\'s arranged*. Within markup, there can be *references to include other documents and files, like images and videos.*
 
-![Graphical user interface, application Description automatically generated](media/image1.png)
+![Graphical user interface, application Description automatically generated](media-html/image1.png)
 
 Now, the page you are looking at now is made up of HTML, and it has got a reference to this video. An HTML can also include links to other pages. Links let the user move around from one page to another.
 
@@ -87,11 +87,11 @@ Then, when you want *to render your HTML file, just open that up with your brows
 
 An HTML file contains markup to tell the browser exactly what to do. Markup is just text that has a special meaning. In HTML, most of the markup looks like this.
 
-![Graphical user interface, application Description automatically generated](media/image2.png)
+![Graphical user interface, application Description automatically generated](media-html/image2.png)
 
 It has these *less than and greater than* *signs* that set off the name of a ***keyword*** such as strong. *This word strong* inside these symbols is a ***tag***, and this whole unit with *two matching tags* and *some text in between is called an **element***. Here is another example of an element.
 
-![Graphical user interface, application Description automatically generated](media/image3.png)
+![Graphical user interface, application Description automatically generated](media-html/image3.png)
 
 This one is called an ***em*** element; an ***em*** stands for ***emphasis***. It means that the text inside should be emphasized. Usually that means it is displayed in italics. Whatever contents are inside the element like, hi there, will be displayed that way in the browser.
 
@@ -99,7 +99,7 @@ Now, every element *starts and ends with a **tag***. The one at the beginning ha
 
 The HTML tags always start with the less-than sign and end with the greater-than sign. Web programmers usually call these ***angle brackets*** because they are shaped like a sharp angle. The angle brackets always come in pairs, it\'s an error to start a tag with an open angle bracket and not ever write a closed bracket to finish the tag. This idea of opening and closing is going to keep coming up as you learn HTML and in other computer languages too.  
 
-![Timeline Description automatically generated](media/image4.png)
+![Timeline Description automatically generated](media-html/image4.png)
 
 Now, you might notice that I call this whole thing an element, and I call these start and end parts tags. That is technically correct. However human beings are not always as precise as computers are, and so you will often hear us *talk about this whole thing as a tag*. That is a little bit wrong, but you will generally be able to tell from context, whether we are talking about a single opening or closing tag, or a whole element.
 
@@ -148,12 +148,12 @@ For example, you can have a paragraph element that has *em* or *mark* elements i
 
 Any of these smaller elements, can be put inside another one too. For instance, you can have text that is both emphasized and highlighted, or you can have things like superscripts show up inside of a piece of emphasized text. But there are some combinations that do not work, ***you cannot put a paragraph inside another paragraph*** for instance, and ***two different HTML elements, cannot overlap in the text***. One must be entirely inside the other.  
 
-![Graphical user interface, website Description automatically generated](media/image5.png)
+![Graphical user interface, website Description automatically generated](media-html/image5.png)
 
 Either the *sup* needs to be inside the *em*, or the *em* inside the *sup*. These rules are mostly common sense, but we will point them out when there are unusually specific requirements. Either element can go inside the bigger one, but you have to decide which one will go inside, they can\'t overlap.
 
-![example](media/image7.png)
-![example](media/image6.png)
+![example](media-html/image7.png)
+![example](media-html/image6.png)
 
 
 
@@ -222,7 +222,7 @@ br is an **inline** element that just creates a line break. It does not have 
 
 ***Examples***
 
-![Text Description automatically generated with medium confidence](media/image8.png)
+![Text Description automatically generated with medium confidence](media-html/image8.png)
 
 Things like lists, tables, headlines, and video players are all ***block elements***. The browser makes a box for each of them. If you put a *numbered list* into your web page, the browser must put a box around it.
 
@@ -244,7 +244,7 @@ The div element is a super important one, and it is used a *lot* in HTML *to
 ***
 ## **Lists and Implied Close Tags**
 
-![Text Description automatically generated](media/image9.png)
+![Text Description automatically generated](media-html/image9.png)
 
 The \<li\> element *cannot exist on its own* but must be nested within an ordered list (\<ol\>\</ol\>) or an unordered list (\<ul\>\</ul\>) as shown in example above.
 
@@ -263,9 +263,9 @@ The br tag is a void element, so it does not allow a closing tag.
 ***
 ## **Nested lists**
 
-![Text Description automatically generated](media/image10.png)  
+![Text Description automatically generated](media-html/image10.png)  
 
-![Text Description automatically generated](media/image11.png)
+![Text Description automatically generated](media-html/image11.png)
 
 A nested list or a sublist is a list within a list. The trick to marking nested lists up correctly in HTML is to recognize that the sublist is actually a child of a list item and not of a list.
 
@@ -430,7 +430,7 @@ You never indent inline elements. Treat them like text/content. Examples:
 
 ***Additional Resources:***
 
-![Qr code Description automatically generated](media/image12.png)
+![Qr code Description automatically generated](media-html/image12.png)
 
 <https://www.granneman.com/webdev/coding/formatting-and-indenting-your-html>  
 
@@ -441,7 +441,7 @@ A web address is called a ***Uniform Resource Locator***, or ***URL*** for short
 
 There are lots of different ways that URLs are written when people are going to read them. Like sometimes you will see them *with http or https on the front*, and sometimes you will not. Like on the side of a truck, someone might put www.ourcompany.com. That works fine if you type it into a browser, because *the browser guesses that you want to go to a website*. But if you use that in HTML code*, it will not work*. *The browser thinks that you are referring to a file with that name.* When we write URLs in html we need to be pretty careful to give the browser all the information that it needs.
 
-![Text Description automatically generated](media/image13.png)
+![Text Description automatically generated](media-html/image13.png)
 
 At the beginning web URLs start with http or https. This tells the browser whether to use secure encryption to connect to a web server. The URL for a file that is on your local drive will start with \"file\" instead. http, https, and file are all *protocols, or ways that the browser can get something*.
 
@@ -459,7 +459,7 @@ If we took away the file path from the above, we would just have:
 
 Which is definitely *not a fully qualified URL*.
 
-![Timeline Description automatically generated](media/image14.png)  
+![Timeline Description automatically generated](media-html/image14.png)  
 
 ***
 ## **Links and the \<a\> tag**
@@ -470,7 +470,7 @@ When you write HTML, you can link to other web pages, both your own and someone 
 
 But we cannot just use by itself. There are a couple things we need an element to include to make a link. The *text that a user clicks on* to follow the link, *and the URL of the page we are linking to*.
 
-![Diagram Description automatically generated with medium confidence](media/image15.png)  
+![Diagram Description automatically generated with medium confidence](media-html/image15.png)  
 
 Here is how we are going to do that. The opening tag for the element has this extra little bit in it that we have not seen in HTML tags before. This href equals \"a url\" part. This is an example of an ***HTML attribute***. It is an *extra piece of data that comes along with the element, and it gives it extra meaning*. The part *before the equal sign is the name of the attribute*, and *the part after, in double quotes, is the value of the attribute*. Here, the name is href and the value is http://example.net. The name href stands for *hypertext reference*, and it is used *with tags and a few other tags that link to another document*. You will *not* ever see it *on a paragraph* or *an emphasis* *tag* or something else.  
 
@@ -486,9 +486,9 @@ The a element is an **inline** element. It does not create a box on the page
 
 ### **Practice --- Addresses and links**
 
-![Graphical user interface Description automatically generated](media/image16.png)
+![Graphical user interface Description automatically generated](media-html/image16.png)
 
-![Graphical user interface, text, application, chat or text message Description automatically generated](media/image17.png)
+![Graphical user interface, text, application, chat or text message Description automatically generated](media-html/image17.png)
 
 ***Reminder***: We need to have the https protocol, as well as the :// separator, in order to make a working link! (for it to match the requirements for a fully qualified URL.  
 
@@ -497,7 +497,7 @@ The a element is an **inline** element. It does not create a box on the page
 
 Images are a huge part of why the web is so successful. So, you might be wondering how to include images in your own web pages. There is an HTML element for just that. This element is img for ***image***, and works a lot like the a element for links but with *some important differences.*
 
-![Text Description automatically generated](media/image18.png)  
+![Text Description automatically generated](media-html/image18.png)  
 
 Now, the a element for links uses *a single* attribute named href whose value is the URL of the page you want to link to. But the img element uses *two* attributes: src and alt. Now src stands for *source* and it is the *URL of the image* that you want to appear in your webpage. An alt stands for *alternate,* and it is *a text description of that image*. The text that shows up here is usually called the alt text.
 
@@ -505,7 +505,7 @@ Now, you *need* to include both of those attributes when you write HTML. The src
 
 Something to keep in mind; putting an img element into your HTML file *does not copy the image file* into your HTML file. It just *tells the browser where to find that image file*, what the source of it is. The image file still must be somewhere, whether that is on your local disk or on a server. The img element is *an empty or void element* like br. It does *not have any textual contents and there is no close tag for it.* Remember, contents of an HTML element would be text between an open and a close tag like in a p element. In the sense that we are using here, the src and the alt on an image tag *are not contents*, they are *HTML attributes* of that element.
 
-![Graphical user interface, application Description automatically generated](media/image19.png)  
+![Graphical user interface, application Description automatically generated](media-html/image19.png)  
 
 The img element is an inline element. You can put an image right into the middle of a piece of text. If the image is taller than the text around it, it will space the lines of text out.
 
@@ -518,7 +518,7 @@ This is a great example of nesting!
 **\
 Files and relative URLs**
 
-![Graphical user interface, text, application Description automatically generated](media/image20.png)
+![Graphical user interface, text, application Description automatically generated](media-html/image20.png)
 
 You might have noticed this Image URL earlier. It is from a site called placebear.com, which has a lot of images of bears. If you want a picture of a bear of a particular size, say 800 by 600 pixels, placebear.com will find one for you. To put this image into my notes.html file, I\'ll put it in an *IMG tag*, and when my browser opens this HTML file, it\'ll know to go out to the placebear.com server, and fetch that image, and put it into the page.  
 
@@ -530,7 +530,7 @@ Using the relative URL has a lot less typing, but that is not the only advantage
 
 So, as a rule, if you are referring to an image or a link that\'s on a Web server, like placebear.com, you\'ll usually want to use a full URL like https://placebear.com/800/600. But, if you are referring to an image or another file that you are passing around along with your HTML file, you should use relative URLs.
 
-![Graphical user interface Description automatically generated](media/image21.png)
+![Graphical user interface Description automatically generated](media-html/image21.png)
 
 By the way, relative URLs are the real reason that you can\'t make an a link to Google by just writing, a href = google.com in your HTML, even though Google.com works if you type it directly into your browser. In HTML, a URL with *no ://* in it is always *treated as a relative URL*. So the browser would look for *a file called Google.com* which is usually not what you want. So, if you want to make a link to another site, you must put the http or https on the front.
 
@@ -630,13 +630,13 @@ Just like that. You will put this, exactly this, at the top of every HTML docume
 ***
 ## **Head and body**
 
-![Text Description automatically generated](media/image23.png)
+![Text Description automatically generated](media-html/image23.png)
 
 A full HTML document has two parts. Everything you have seen so far in this lesson except the DOCTYPE Tag, *lives in the second of these parts*, the ***body*** of the document, that is where the *contents of the document go*, *the paragraphs, images, lists, links* and *other things that will appear on the screen for the user*.  
 
 The other part of an HTML document is called the ***head*** and it is where we put certain pieces of important information about the document. Both the head and the body occur inside *a single enclosing element* called *HTML*.  
 
-![Text Description automatically generated](media/image24.png)
+![Text Description automatically generated](media-html/image24.png)
 
 Here is just a few of the things that can appear in the head of an HTML file. The ***title*** is the only *required* part of the head. It tells the browser *what title to put on a tab* that is displaying the document. We put the title in a title element with *an open and a close tag*. 
 
